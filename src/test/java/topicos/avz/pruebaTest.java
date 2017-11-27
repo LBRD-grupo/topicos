@@ -10,7 +10,7 @@ public class pruebaTest {
 	public void test() {
 		calculadora var = new calculadora();
 		int result = var.suma(2,3);
-		assertEquals(6, result);
+		assertEquals(5, result);
 	}
 
 }

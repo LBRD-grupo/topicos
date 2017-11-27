@@ -8,14 +8,7 @@ public class juego {
 	public void tirar(int i, int j) {
 		// TODO Auto-generated method stub
 		tiro1=i;
-		if(tiro1>10) {
-			tiro1=10;
-		}else {
-			if(tiro1==10) {
-				pleno=true;
-				tiro2=0;
-			}
-		}
+		
 		if (tiro1<10) {
 			tiro2=j;
 			if(tiro2>(10-tiro1)) {

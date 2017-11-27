@@ -47,11 +47,9 @@ public class bowling {
 		juego t10=new juego();
 		t10.tirar(1,1);
 		juego extra=new juego();
-		if(t10.pleno) {
+		
 		extra.tiroExtra(1,1);
-		}else {
-			extra.tiroExtra(0,0);
-		}
+		
 		assertEquals(20, t1.juegoDefinidoTotal(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, extra));
 	}
 	@Test

@@ -18,4 +18,10 @@ public class bowling {
 		t1.tirar(10,7);
 		assertEquals(true, t1.pleno);
 	}
+	@Test
+	public void testSumaPleno() {
+		juego t1=new juego();
+		t1.tirar(10,7);
+		assertEquals(10, t1.contabilizarPleno());
+	}
 }

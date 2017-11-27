@@ -27,6 +27,13 @@ public class juego {
 	public void sumarTiros() {
 		suma=tiro1+tiro2;
 	}
+	public int contabilizarPleno() {
+		if(pleno) {
+			return tiro1;
+		}else {
+			return tiro2;
+		}
+	}
 	public void tiroExtra(int i, int j) {
 		tiro1=i;
 		tiro2=j;

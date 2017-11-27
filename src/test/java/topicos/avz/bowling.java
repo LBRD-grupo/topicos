@@ -8,7 +8,9 @@ public class bowling {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		juego var1=new juego();
+		var1.tirar(10,3);
+		assertEquals(10, var1.suma);
 	}
 
 }

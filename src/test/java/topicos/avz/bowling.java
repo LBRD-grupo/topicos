@@ -7,10 +7,15 @@ import org.junit.Test;
 public class bowling {
 
 	@Test
-	public void test() {
-		juego var1=new juego();
-		var1.tirar(10,3);
-		assertEquals(10, var1.suma);
+	public void testPuntos() {
+		juego t1=new juego();
+		t1.tirar(10,3);
+		assertEquals(10, t1.suma);
 	}
-
+	@Test
+	public void testPleno() {
+		juego t1=new juego();
+		t1.tirar(10,7);
+		assertEquals(true, t1.pleno);
+	}
 }

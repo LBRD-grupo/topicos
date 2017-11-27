@@ -52,7 +52,7 @@ public class bowling {
 		}else {
 			extra.tiroExtra(0,0);
 		}
-		assertEquals(20, t1.juegoDefinidoTotal(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, extra));
+		assertEquals(23, t1.juegoDefinidoTotal(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, extra));
 	}
 	@Test
 	public void testContabilizarJuegoSoloPleno() {

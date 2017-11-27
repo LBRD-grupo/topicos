@@ -9,7 +9,7 @@ public class bowling {
 	@Test
 	public void testPuntos() {
 		juego t1=new juego();
-		t1.tirar(-10,3);
+		t1.tirar(10,3);
 		assertEquals(10, t1.suma);
 	}
 	@Test

@@ -139,7 +139,7 @@ public class juego {
 			total=total+t9.suma;
 		}
 		if(t9.pleno) {
-			total=total+t10.suma+10;
+			total=total+t10.suma+20;
 		}
 		else {
 			total=total+t10.suma;

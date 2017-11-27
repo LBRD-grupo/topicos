@@ -24,4 +24,54 @@ public class bowling {
 		t1.tirar(10,7);
 		assertEquals(10, t1.contabilizarPleno());
 	}
+	@Test
+	public void testContabilizarFrames() {
+		juego t1=new juego();
+		t1.tirar(1,1);
+		juego t2=new juego();
+		t2.tirar(1,1);
+		juego t3=new juego();
+		t3.tirar(1,1);
+		juego t4=new juego();
+		t4.tirar(1,1);
+		juego t5=new juego();
+		t5.tirar(1,1);
+		juego t6=new juego();
+		t6.tirar(1,1);
+		juego t7=new juego();
+		t7.tirar(1,1);
+		juego t8=new juego();
+		t8.tirar(1,1);
+		juego t9=new juego();
+		t9.tirar(1,1);
+		juego t10=new juego();
+		t10.tirar(1,1);
+		juego extra=new juego();
+		extra.tiroExtra(1,1);
+		assertEquals(22, t1.juegoDefinidoTotal(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, extra));
+	}
+	public void testContabilizarJuegoSoloPleno() {
+		juego t1=new juego();
+		t1.tirar(3,7);
+		juego t2=new juego();
+		t2.tirar(6,7);
+		juego t3=new juego();
+		t3.tirar(10,7);
+		juego t4=new juego();
+		t4.tirar(2,7);
+		juego t5=new juego();
+		t5.tirar(10,7);
+		juego t6=new juego();
+		t6.tirar(10,7);
+		juego t7=new juego();
+		t7.tirar(1,7);
+		juego t8=new juego();
+		t8.tirar(10,7);
+		juego t9=new juego();
+		t9.tirar(1,7);
+		juego t10=new juego();
+		t10.tirar(10,7);
+		juego extra=new juego();
+		extra.tiroExtra(10,10);
+	}
 }

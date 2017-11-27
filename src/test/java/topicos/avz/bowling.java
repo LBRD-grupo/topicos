@@ -16,7 +16,7 @@ public class bowling {
 	public void testPleno() {
 		juego t1=new juego();
 		t1.tirar(10,7);
-		assertEquals(false, t1.pleno);
+		assertEquals(true, t1.pleno);
 	}
 	@Test
 	public void testSumaPleno() {
